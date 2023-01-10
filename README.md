@@ -1,10 +1,3 @@
-# SuperFlow
-
-Crypto subscription payments infrastructure
-
-## About The Project
-
-We are a one-stop shop for companies to handle the infrastructure of subscription service payments, making use of solidity’s Factory contracts feature.
 
 ## Getting Started
 
