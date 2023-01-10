@@ -5,13 +5,12 @@ import axios from 'axios';
 import {commentEndPoint} from "../../../utils/config.json";
 import { useUser } from '@auth0/nextjs-auth0/client';    
 
-function updateComment(id, upvotes) {
-    axios.patch(commentEndPoint + id, {
-        upvotes
-    })
-}
-
 function CommentSection({post, currUser}) {
+    function updateComment(id, upvotes) {
+        axios.patch(commentEndPoint + id, {
+            upvotes
+        })
+    }
     const returnComments = post.included.map(item => {
         const [upvotedComment, setUpvoted] = useState(false);
         const [commentUpvoteCount, setCommentUpvoteCount] = useState(0);

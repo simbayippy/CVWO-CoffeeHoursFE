@@ -20,7 +20,11 @@ export default function Post( props ) {  // post is taken from getStaticProps, i
         axios.get(userEndPoint).then((response) => { 
             setAllUsers(response.data.data); // useState save list of ALL USERS
             setPoster(post.data.attributes.poster);
-        })
+        });
+        axios.get(userEndPoint + user?.nickname.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '')).then(response=> {
+            setUserId(response.data.data.id);
+            console.log(response.data.data.id)
+        });
     }, []);
 
     if (isLoading) return <div className={styles.loading}>Loading...</div>;
@@ -33,7 +37,7 @@ export default function Post( props ) {  // post is taken from getStaticProps, i
         });
     }
 
-    getUserId();
+    // getUserId();
 
     function isPoster() {
         return user?.nickname == poster

@@ -54,10 +54,10 @@ function ForumMain({int, filterNum}) {
             return bubbleSortComments(list);
         } else if (filterNum == 2) {
             // newest
-            return bubbleSortTime(list);
+            return bubbleSortTime(list).reverse();
         } else {
             //oldest
-            return bubbleSortTime(list).reverse();
+            return bubbleSortTime(list);
         }
     }
     

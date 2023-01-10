@@ -1,6 +1,6 @@
 {
-    "postEndPoint": "http://localhost:3000/api/v1/posts/",
-    "commentEndPoint": "http://localhost:3000/api/v1/comments/",
-    "tagEndPoint" : "http://localhost:3000/api/v1/tags/",
-    "userEndPoint" : "http://localhost:3000/api/v1/users/"
+    "postEndPoint": "https://mighty-falls-50796.herokuapp.com/api/v1/posts/",
+    "commentEndPoint": "https://mighty-falls-50796.herokuapp.com/api/v1/comments/",
+    "tagEndPoint" : "https://mighty-falls-50796.herokuapp.com/api/v1/tags/",
+    "userEndPoint" : "https://mighty-falls-50796.herokuapp.com/api/v1/users/"
 }

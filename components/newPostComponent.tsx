@@ -17,7 +17,7 @@ function NewPostComponent() {
     const { user, error, isLoading } = useUser();
     const [newPostTitle, setNewPostTitle] = useState("");
     const [newPostBody, setNewPostBody] = useState("");
-    const [tag, setTag] = useState(0);
+    const [tag, setTag] = useState(1);
     const [userId, setUserId] = useState(0);
 
 
@@ -25,15 +25,14 @@ function NewPostComponent() {
     if (isLoading) return <div className={styles.loading}>Loading...</div>;
     if (error) return <div>{error.message}</div>;
 
-    function getUserId() {
+    useEffect(() => {
         axios.get(userEndPoint + user?.nickname.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '')).then(response=> {
             console.log(response.data.data.id)
             setUserId(response.data.data.id);
         });
-    }
+    }, []);
 
     function createPost(title, body) {
-        console.log(title, body, user?.nickname, tag, userId)
         axios.post(postEndPoint, {
             title: title,
             body: body,
@@ -57,17 +56,16 @@ function NewPostComponent() {
     }
 
     function handleChangeTag(event) {
-        getUserId();
         if (event.target.value == "general") {
-            setTag(6);
+            setTag(1);
         } else if (event.target.value == "crypto") {
-            setTag(7);
+            setTag(2);
         } else if (event.target.value == "computing") {
-            setTag(8);
+            setTag(3);
         } else if (event.target.value == "university") {
-            setTag(9);
+            setTag(4);
         } else {
-            setTag(10);
+            setTag(5);
         }
     }
     function logValue() {
@@ -99,7 +97,7 @@ function NewPostComponent() {
                     />
                     <div className={styles.addTags}>
                         Category: 
-                        <select  id="subject" className={styles.dropDown} onChange={handleChangeTag}>
+                        <select id="subject" className={styles.dropDown} onChange={handleChangeTag}>
                             <option value="general">general</option>
                             <option value="crypto">crypto</option>
                             <option value="computing">computing</option>
