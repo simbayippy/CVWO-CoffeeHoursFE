@@ -1,0 +1,81 @@
+.newPost {
+    margin-top: 1.7rem;
+    min-height: 84.55vh;
+    background-color: rgb(65, 63, 63);
+}
+
+.newPostContainer {
+    padding-top: 2rem;
+}
+
+.newPostContent {
+    /* border: 1px solid black; */
+    margin: auto;
+    width: 65%;
+    min-height: 60vh;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.title {
+    /* text-align: center; */
+    font-weight: 500;
+    font-size: 180%;
+    padding-left: 30px;
+}
+
+.form {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+
+}
+
+.titleInput {
+    background-color: rgb(65, 63, 63);
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 7px;
+    width: 93.5%;
+}
+
+.bodyInput {
+    background-color: rgb(65, 63, 63);
+    border: 1px solid black;
+    border-radius: 10px;  
+    padding: 7px; 
+    width: 93.5%;
+    min-height: 33vh;
+}
+
+.addTags {
+    width: 25%;
+    border-radius: 7px;
+    background-color: rgb(138, 7, 138);
+    margin: auto;
+    margin-top: 0.4rem;
+    padding: 5px;
+}
+
+.dropDown {
+    background-color: rgb(138, 7, 138);
+
+    margin-left: 3px;
+    /* border: 1px solid red; */
+}
+
+.createPostSection {
+    margin-top: 0.7rem;
+}
+
+.createPostBtn {
+    padding: 5px;
+    width: 25%;
+    border-radius: 7px;
+    background-color: #1ebd3c;
+}
+
+.createPostBtn:hover {
+    transform: scale(1.01);
+}

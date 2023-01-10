@@ -1,0 +1,46 @@
+.tagAndFilter{
+    display: flex;
+    margin-bottom: 12px;
+    /* border: 1px solid black; */
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    /* border: 1px solid black; */
+    width: 27%;
+	justify-content: space-between;
+    margin-left: 17.5%;
+}
+
+.tag_item {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #1ebd3c;
+    color: white;
+}
+  
+.tag_item:hover {
+    transform: scale(1.02);
+}
+
+.tag_active {
+    background-color: black;
+    font-weight: 500;
+}
+
+.filter {
+    margin-right: 16.8%;
+    margin-top: 5px;
+    /* border: 1px solid black; */
+}
+
+.filterBtn {
+    margin-right: 10px;
+}
+
+.filterBtn:hover {
+	border-bottom: 2px solid #1ebd3c;
+    color: #1ebd3c;
+}

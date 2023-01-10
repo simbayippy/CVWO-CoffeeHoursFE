@@ -1,0 +1,55 @@
+.loginContainer {
+    text-align: center;
+    /* border: 1px solid black; */
+    min-height: 21rem;
+    padding-top: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: rgb(204 204 204 / 25%) 0px 0px 6px 3px;
+    display: block;
+}
+
+.logo_img {
+    width: 20%;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    /* border: 1px solid red; */
+}
+
+.loginTitle {
+    font-weight: bold;
+    font-size:150%;
+}
+
+.loginDesc {
+    font-weight: 500;
+}
+
+.loginButtons {
+    margin-top: 0.5rem;
+}
+
+.loginEmailBtn {
+    font-size: 110%;
+    font-weight: 450;
+    width: 133px;
+    height: 37px;
+    background-color: #1ebd3c;
+    color: white;
+    border-radius: 7px;
+}
+
+.loginEmailBtn:hover {
+    transform: scale(103%);
+}
+
+.loginCrypto {
+    width: inherit;
+    margin-left: 37%;
+    /* border: 1px solid red; */
+    justify-content: center;
+}

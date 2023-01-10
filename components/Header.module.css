@@ -1,0 +1,155 @@
+.header {
+	border-top: 10px solid black;
+}
+
+.hidden {
+	display: none;
+}
+	
+.container {
+	width: 90%;
+	max-width: 1350px;
+	margin: 0 auto;
+	margin-top: 1.5rem;
+}
+
+.container_flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	width: 41%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	margin-left: 4rem;
+}
+
+.logotxt{
+	margin-left: 1.5rem;
+}
+
+.logo_img {
+	min-width: 50px;
+	max-width: 12%;
+}
+
+.logo_title {
+	font-size: 1.3em;
+	font-weight: 700;
+}
+
+.logo_description {
+	font-size: 1em;
+	font-weight: 500;
+}
+
+.nav_links {
+	width: 33%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 4rem;
+}
+
+.nav_link {
+	font-weight: 400;
+	box-sizing: border-box;
+}
+
+.nav_link_logged_in {
+	border-radius: 5px;
+}
+.hide {
+}
+
+.profile_img {
+	width: 10%;
+	border-radius: 8px;
+	transform: scaleX(-1);
+}
+
+.profile_img:hover {
+	cursor: pointer;
+	transform: scale(1.01);
+}
+
+.nav_link:hover {
+	margin-top: 2px;
+	border-bottom: 2px solid #1ebd3c;
+	color: #1ebd3c;
+}
+
+.button {
+	background: #000;
+	color: #fff;
+	border-radius: 6px;
+	padding: 0.5em 1.5em;
+	margin-left: 2.5em;
+}
+
+.loading {
+    margin: auto;
+    font-size: 120%;
+    font-weight: bold;
+	text-align: center;
+	margin-top: 3rem;
+}
+
+@media (max-width: 675px) {
+	.header {
+		font-size: 14px;
+	}
+
+	.container_flex {
+		flex-direction: column;
+	}
+
+	.hidden {
+		display: block;
+	}
+
+	.hamburger {
+		display: block;
+		position: absolute;
+		right: 2em;
+		z-index: 2;
+		width: 10%;
+	}
+
+	.logo {
+		position: absolute;
+		left: 2em;
+		z-index: 2;
+	}
+
+	.nav_links {
+		position: absolute;
+		top: 0vh;
+		right: 0px;
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		justify-content:space-evenly;
+    background-color: #fff;
+    z-index: 1;
+		margin-top: 1em;
+		display: none;
+	}
+
+	.nav_active {
+		display: flex;
+	}
+
+	.nav_link {
+		margin-top: 1.2em;
+		font-weight: 700;
+		font-size: 1.8em;
+	}
+
+	.button {
+		margin-left: 0;
+	}
+}
