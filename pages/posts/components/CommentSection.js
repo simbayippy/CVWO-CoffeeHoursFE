@@ -6,17 +6,20 @@ import {commentEndPoint} from "../../../utils/config.json";
 import { useUser } from '@auth0/nextjs-auth0/client';    
 
 function CommentSection({post, currUser}) {
+    const { user, error, isLoading } = useUser();
+        
+    if (isLoading) return <div className={styles.loading}>Loading...</div>;
+
     function updateComment(id, upvotes) {
         axios.patch(commentEndPoint + id, {
             upvotes
         })
     }
+    
     const returnComments = post.included.map(item => {
         const [upvotedComment, setUpvoted] = useState(false);
         const [commentUpvoteCount, setCommentUpvoteCount] = useState(0);
-        const { user, error, isLoading } = useUser();
-        
-        if (isLoading) return <div className={styles.loading}>Loading...</div>;
+
         function clickUpvoteComment() {
             if (upvotedComment) {
                 // sends a patch to BE

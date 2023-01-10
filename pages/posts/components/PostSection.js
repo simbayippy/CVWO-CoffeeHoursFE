@@ -25,8 +25,6 @@ function PostSection({post, isPoster, poster}) {
         })
     }
 
-    console.log(isPoster, "hi")
-
     // for tracking upvote
     function upvoteClick() {
         if (upvoted) {

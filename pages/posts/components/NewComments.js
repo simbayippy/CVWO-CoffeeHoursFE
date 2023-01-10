@@ -10,11 +10,12 @@ function NewComments({post, id, currUser}) {
     const [newCommentText, setNewCommentText] = useState("");
     const { user, error, isLoading } = useUser();
 
+    console.log(id, "isss")
+
     if (isLoading) return <div className={styles.loading}>Loading...</div>;
     if (error) return <div>{error.message}</div>;
 
     function postComment(body, post_id) {
-        console.log(id)
         axios.post(commentEndPoint, {
             body,
             upvotes: 0,

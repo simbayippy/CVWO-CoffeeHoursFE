@@ -27,7 +27,6 @@ function NewPostComponent() {
 
     useEffect(() => {
         axios.get(userEndPoint + user?.nickname.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '')).then(response=> {
-            console.log(response.data.data.id)
             setUserId(response.data.data.id);
         });
     }, []);

@@ -16,7 +16,7 @@ function ForumMain({int, filterNum}) {
             .then((response) => {
                 setAPIData(response.data.data)
             })
-            .catch((response) => console.log(response))
+            .catch((response) => console.log(response, "hi"))
     }, [APIData.length]);
 
     // using data taken from DB and displaying it
@@ -43,7 +43,6 @@ function ForumMain({int, filterNum}) {
         } 
     })
 
-    console.log(filterNum, "now")
 
     function handleFilter(list, filterNum) {
         if (filterNum == 0) {
@@ -62,7 +61,6 @@ function ForumMain({int, filterNum}) {
     }
     
     function bubbleSort(list) {
-        console.log(list)
         const A = list;
         const len = A.length;
         for (let i = len - 1; i >= 1; i = i - 1) {
