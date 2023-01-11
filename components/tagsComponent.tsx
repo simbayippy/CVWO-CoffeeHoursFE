@@ -23,6 +23,7 @@ function TagsComponent({isTagActive, int}) {
     
     var counter = 0;
     const tags = tagsList.map(item => {
+        console.log("/forum" + item.attributes.name);
         counter++;
         return (
             <Link href={`/forum${item.attributes.name}`} className={`${styles.tag_item} ${isTagActive[counter-1] && styles.tag_active}`}>{item.attributes.name}</Link>

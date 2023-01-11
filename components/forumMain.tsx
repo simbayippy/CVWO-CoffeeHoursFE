@@ -25,19 +25,19 @@ function ForumMain({int, filterNum}) {
             return (<PostCommon post = {item} poster = {item.attributes.poster}/>)
         } else if (int == 1) {
             // return only crypto tags TODO
-            if (item.attributes.tag_id == 7) {
+            if (item.attributes.tag_id == 2) {
                 return (<PostCommon post = {item} poster = {item.attributes.poster}/>)
             }
         } else if (int == 2) {
-            if (item.attributes.tag_id == 8) {
+            if (item.attributes.tag_id == 3) {
                 return (<PostCommon post = {item} poster = {item.attributes.poster}/>)
             }     
         } else if (int == 3) {
-            if (item.attributes.tag_id == 9) {
+            if (item.attributes.tag_id == 4) {
                 return (<PostCommon post = {item} poster = {item.attributes.poster}/>)
             }     
         } else {
-            if (item.attributes.tag_id == 10) {
+            if (item.attributes.tag_id == 5) {
                 return (<PostCommon post = {item} poster = {item.attributes.poster}/>)
             }     
         } 
