@@ -12,7 +12,7 @@ function Header() {
     const mounted = isMounted();
 	const { user, error, isLoading } = useUser();
 
-	if (isLoading) return <div className={styles.loading}>Loading?????????...</div>;
+	// if (isLoading) return <div className={styles.loading}>Loading?????????...</div>;
 
 	function handleClick() {
 		location.href = "/profile";
