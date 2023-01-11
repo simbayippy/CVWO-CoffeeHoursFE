@@ -1,4 +1,4 @@
-import { useState } from "react"
+import React, { useState } from "react"
 import Link from "next/link"
 import styles from "./Header.module.css"
 import { useAccount } from "wagmi"
@@ -12,7 +12,7 @@ function Header() {
     const mounted = isMounted();
 	const { user, error, isLoading } = useUser();
 
-	if (isLoading) return <div className={styles.loading}>Loading...</div>;
+	if (isLoading) return <div className={styles.loading}>Loading?????????...</div>;
 	if (error) return <div>{error.message}</div>;
 
 	function handleClick() {
