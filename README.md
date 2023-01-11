@@ -1,3 +1,5 @@
 demo at: https://coffeehours.site/
 
-there are still some bugs. namely getStaticProps. will figure it out soon
+there are still some bugs during production. namely getStaticProps. will figure it out soon
+
+works perfectly during development.

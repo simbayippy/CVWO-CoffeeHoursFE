@@ -10,7 +10,7 @@ function NewComments({post, id, currUser}) {
     const [newCommentText, setNewCommentText] = useState("");
     const { user, error, isLoading } = useUser();
 
-    console.log(id, "isss")
+    console.log(id, "isssewfukn")
 
     if (isLoading) return <div className={styles.loading}>Loading...</div>;
     if (error) return <div>{error.message}</div>;
@@ -19,7 +19,7 @@ function NewComments({post, id, currUser}) {
         axios.post(commentEndPoint, {
             body,
             upvotes: 0,
-            commentor: user?.nickname,
+            commentor: currUser,
             post_id,
             user_id: id
         })
@@ -34,7 +34,7 @@ function NewComments({post, id, currUser}) {
 	}
 
     return (
-        user?.nickname != undefined ? (
+        currUser != undefined ? (
             <div className={styles.newCommentContainer}>
                 <div className={styles.newComment}>
                     <form onSubmit={handleSubmit}>

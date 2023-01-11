@@ -15,7 +15,7 @@ function CommentSection({post, currUser}) {
             upvotes
         })
     }
-    
+
     const returnComments = post.included.map(item => {
         const [upvotedComment, setUpvoted] = useState(false);
         const [commentUpvoteCount, setCommentUpvoteCount] = useState(0);
@@ -50,7 +50,7 @@ function CommentSection({post, currUser}) {
                                     <img src="/upvoted.png" alt="" className={styles.upvoteComment}/>
                                 </button>
                             ) : (
-                                user?.nickname != undefined ? (
+                                currUser != undefined ? (
                                     <button className={styles.upvoteButtonComment} onClick={clickUpvoteComment}>
                                         <img src="/upvote.png" alt="" className={styles.upvoteComment}/>
                                     </button>
