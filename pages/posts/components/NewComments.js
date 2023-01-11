@@ -63,11 +63,11 @@ function NewComments({post, id, currUser}) {
                 <div className={styles.notLoggedIn}>
                     <p className={styles.notLoggedInTitle}>Login to your account to leave comment and upvote!</p>
                     <button className={styles.notLoggedInLogin}>
-                        <Link href="../api/auth/login">Log In!</Link>
+                        <Link href="../../api/auth/login">Log In!</Link>
                     </button>
                     <p className={styles.notLoggedInDesc}>Haven't registered?</p>
                     <button className={styles.notLoggedInRegister}>
-                        <Link href="../api/auth/login">Register Now!</Link>
+                        <Link href="../../api/auth/login">Register Now!</Link>
                     </button>
                 </div>                
             </div>
