@@ -23,7 +23,6 @@ const Home: NextPage = () => {
 				<title>CoffeeHours</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-
 			<Layout>
 				<main className={`${styles.container} ${styles.container_flex}`}>
 					<div className={styles.information}>
