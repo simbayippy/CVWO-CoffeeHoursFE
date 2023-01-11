@@ -121,7 +121,7 @@ const Options = ({post, int, commentId, commentBody}) => {
                         <div className={styles.choices}>
                             <button className={styles.cancelbtn} onClick={() => setConfirmed((prev) => !prev)}>Cancel</button>
                             {int == 0 ?
-                                <Link href ="/forum"><button className={styles.deletebtn} onClick={() =>deletePostOrComment(int, commentId)}>Delete</button></Link>
+                                <Link href ="/forumgeneral"><button className={styles.deletebtn} onClick={() =>deletePostOrComment(int, commentId)}>Delete</button></Link>
                                 :
                                 <button className={styles.deletebtn} onClick={() =>deletePostOrComment(int, commentId)}>Delete</button>
                             }
