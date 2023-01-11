@@ -1,5 +1,5 @@
-demo at: https://coffeehours.site/
 
-there are still some bugs during production. namely getStaticProps. will figure it out soon
 
-works perfectly during development.
+Live demo at: https://coffeehours.site/
+
+Find the backend repo here: https://github.com/simbayippy/CVWO-CoffeeHours
