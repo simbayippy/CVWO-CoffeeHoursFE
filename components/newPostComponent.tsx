@@ -15,7 +15,7 @@ function NewPostComponent() {
     // the below 2 lines were supposed to be used for Metamask login (crypto)
     // const mounted = isMounted();
 	// const { address, isConnected, isConnecting } = useAccount()
-    const notify = () => toast("Post created!");
+    const notify = () => toast("Post created! Visit the Forum section!");
     const { user, error, isLoading } = useUser();
     const [newPostTitle, setNewPostTitle] = useState("");
     const [newPostBody, setNewPostBody] = useState("");
