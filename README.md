@@ -5,23 +5,23 @@
 *Find the backend repo here: https://github.com/simbayippy/CVWO-CoffeeHours*
 
 
-##**Techstack**
+**Techstack**
 
 FE:
--nextjs + react framework. a mix of typescript and js was used.
--additional frameworks installed: react toastify for notifications
--user's avatar: dicebear.com's api
+nextjs + react framework. a mix of typescript and js was used <br />
+additional frameworks installed: react toastify for notifications <br />
+user's avatar: dicebear.com's api <br />
 
 hosted on netlify
 
 BE:
--rails 7
+rails 7
 
 Auth:
 -Auth0's framework
 
 
-##**Timeline**
+**Timeline**
 
 - [x] 26th - 29th dec: start of project, learning + setting up of rails db on mac
 - [x] 30th dec - 10th jan: focusing on FE + learning how FE and BE interacts with each other
@@ -29,7 +29,7 @@ Auth:
 - [x] 13th jan onwards: fixing of any bugs, misc.
 
 
-##**Key takeaways**
+**Key takeaways**
 
 Overall, I found this CVWO assignment to have been very fruitful. I've never worked with rails let alone a BE before, so integrating a BE with FE was really interesting.
 
