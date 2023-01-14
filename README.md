@@ -1,4 +1,4 @@
-#**CoffeeHours forum - CVWO**
+**CoffeeHours forum - CVWO**
 
 **Live demo at: https://coffeehours.site/**
 
@@ -8,17 +8,17 @@
 ##**Techstack**
 
 FE:
-nextjs + react framework. a mix of typescript and js was used.
-additional frameworks installed: react toastify for notifications
-user's avatar: dicebear.com's api
+-nextjs + react framework. a mix of typescript and js was used.
+-additional frameworks installed: react toastify for notifications
+-user's avatar: dicebear.com's api
 
 hosted on netlify
 
 BE:
-rails 7
+-rails 7
 
 Auth:
-Auth0's framework
+-Auth0's framework
 
 
 ##**Timeline**
