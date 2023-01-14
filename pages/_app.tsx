@@ -8,7 +8,7 @@ import { mainnet, polygon, optimism, arbitrum, goerli } from 'wagmi/chains';
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import { UserProvider } from '@auth0/nextjs-auth0/client';
-
+import { ToastContainer, toast } from 'react-toastify';
 
 const ubuntu = Ubuntu({
 	weight: ["400", "500", "700"],
@@ -49,6 +49,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 					</RainbowKitProvider>
 				</WagmiConfig>
 			</UserProvider>
+			<ToastContainer />
 		</div>
 	)
 }

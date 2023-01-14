@@ -10,7 +10,6 @@ import axios from 'axios';
 import {postEndPoint} from "../utils/config.json";
 import styles from "../styles/NewPost.module.css"
 
-
 const NewPost: NextPage = () => {
   const { address, isConnected } = useAccount()
   const { user, error, isLoading } = useUser();

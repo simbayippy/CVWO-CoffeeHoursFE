@@ -4,13 +4,14 @@ import axios from 'axios';
 import { commentEndPoint, userEndPoint } from "../../../utils/config.json";
 import { useUser } from '@auth0/nextjs-auth0/client';
 import Link from "next/link"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 // need to get user id
 function NewComments({post, id, currUser}) {
     const [newCommentText, setNewCommentText] = useState("");
     const { user, error, isLoading } = useUser();
-
-    console.log(id, "isssewfukn")
+    const notify = () => toast("Comment created!");
 
     if (isLoading) return <div className={styles.loading}>Loading...</div>;
     if (error) return <div>{error.message}</div>;
@@ -25,7 +26,7 @@ function NewComments({post, id, currUser}) {
         })
     }
 
-    function handleSubmit() {
+    function handleSubmit(event) {
         postComment(newCommentText, post.data.id)
 	}
 

@@ -8,18 +8,19 @@ import { useAccount } from "wagmi"
 import { useUser } from '@auth0/nextjs-auth0/client';
 import axios, { all } from 'axios';
 import { postEndPoint, userEndPoint } from "../utils/config.json";
-import PostCommon from "./postCommon";
-import { isNull } from "util";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function NewPostComponent() {
-    const mounted = isMounted();
-	const { address, isConnected, isConnecting } = useAccount()
+    // the below 2 lines were supposed to be used for Metamask login (crypto)
+    // const mounted = isMounted();
+	// const { address, isConnected, isConnecting } = useAccount()
+    const notify = () => toast("Post created!");
     const { user, error, isLoading } = useUser();
     const [newPostTitle, setNewPostTitle] = useState("");
     const [newPostBody, setNewPostBody] = useState("");
     const [tag, setTag] = useState(1);
     const [userId, setUserId] = useState(0);
-
 
     // if (isConnecting) return <div>Loading...</div>;
     if (isLoading) return <div className={styles.loading}>Loading...</div>;
@@ -39,11 +40,14 @@ function NewPostComponent() {
             poster: user?.nickname,
             tag_id: tag,
             user_id: userId
+        }).then(res=> {
+            notify();
         });
     }
 
-    function handleSubmit() {
-        createPost(newPostTitle, newPostBody)
+    function handleSubmit(event) {
+		event.preventDefault()
+        createPost(newPostTitle, newPostBody);
 	}
 
     const handleChange = event => {
@@ -110,7 +114,6 @@ function NewPostComponent() {
                 </form>
             </div>
         </main>
-
     )
 }
 
