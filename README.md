@@ -41,3 +41,4 @@ Some interesting things I've learnt include:
 for the future:
 - not really sure if my DB implementation has been optimal, esp with creating new users (after interacting with auth0)
 - use of https://precedent.vercel.app/ since it has a lot of built in features that would have saved me a lot of time. sadly only found out about this today scrolling twitter (14th jan)
+- initially I wanted to add the integration of MetaMask (crypto walet), linking each user with their own ethereum address, and have added in the necessary frameworks (wagmi + rainbowkit). will work on this in the future
