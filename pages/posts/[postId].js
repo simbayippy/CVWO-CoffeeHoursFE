@@ -98,7 +98,7 @@ export default function Post( {post} ) {  // post is taken from getStaticProps, 
 export async function getServerSideProps({params}) {
     // Fetch data from external API
     const {postId} = params;
-    const res = await fetch(`https://mighty-falls-50796.herokuapp.com/api/v1/posts/${postId}`);
+    const res = await fetch(`https://my-app-render-q45f.onrender.com/api/v1/posts/${postId}`);
     var post = await res.json()
 
     // Pass data to the page via props
