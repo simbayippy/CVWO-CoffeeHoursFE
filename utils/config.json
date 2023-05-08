@@ -1,7 +1,7 @@
 {
-    "postEndPoint": "https://my-app-render-9eom.onrender.com/api/v1/posts/",
-    "commentEndPoint": "https://my-app-render-9eom.onrender.com/api/v1/comments/",
-    "tagEndPoint" : "https://my-app-render-9eom.onrender.com/api/v1/tags/",
-    "userEndPoint" : "https://my-app-render-9eom.onrender.com/api/v1/users/"
+    "postEndPoint": "https://my-app-render-q45f.onrender.com/api/v1/posts/",
+    "commentEndPoint": "https://my-app-render-q45f.onrender.com/api/v1/comments/",
+    "tagEndPoint" : "https://my-app-render-q45f.onrender.com/api/v1/tags/",
+    "userEndPoint" : "https://my-app-render-q45f.onrender.com/api/v1/users/"
 }
 
